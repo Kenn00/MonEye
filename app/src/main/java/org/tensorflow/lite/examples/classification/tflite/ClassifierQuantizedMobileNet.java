@@ -36,7 +36,7 @@ public class ClassifierQuantizedMobileNet extends Classifier {
         // you can download this file from
         // see build.gradle for where to obtain this file. It should be auto
         // downloaded into assets.
-        return "model-9-MobNet-448.tflite";
+        return "my_model.tflite";
     }
 
     @Override
