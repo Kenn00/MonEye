@@ -1,13 +1,12 @@
 plugins {
     id 'com.android.application'
-    id 'kotlin-android'
 }
 
 android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "org.tensorflow.lite.examples.classification"
+        applicationId "com.example.the_moneye"
         minSdk 23
         targetSdk 31
         versionCode 1
@@ -29,11 +28,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
     buildFeatures {
         mlModelBinding true
+        viewBinding true
     }
 }
 
@@ -45,11 +42,7 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
     implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
     implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
-    implementation 'com.google.android.material:material:1.6.0'
     testImplementation 'junit:junit:'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
-    implementation 'org.tensorflow:tensorflow-lite-gpu:0.0.0-nightly'
 }

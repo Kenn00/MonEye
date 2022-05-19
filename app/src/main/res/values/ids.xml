@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="gesture_layout" type="id" />
+    <item name="threshold_value" type="id" />
+    <item name="detected_item" type="id" />
+</resources>

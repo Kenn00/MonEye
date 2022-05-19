@@ -34,6 +34,9 @@ public abstract class ClassifierActivity extends CameraActivity implements OnIma
     private Matrix cropToFrameTransform;
     private BorderedText borderedText;
 
+    public ClassifierActivity() {
+        super(parent, adapterView, frameInfo);
+    }
 
 
     @Override

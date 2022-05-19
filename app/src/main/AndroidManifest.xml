@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.tensorflow.lite.examples.classification">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.The_Moneye">
 
     <uses-sdk />
 
@@ -7,23 +8,23 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/tbaicon"
         android:label="TheMonEye"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.TheMonEye"
-        android:fullBackupContent="">
+        android:roundIcon="@drawable/tbaicon"
+        android:supportsRtl="true">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ClassifierActivity"
+            android:label="TheMonEye"
+            android:screenOrientation="portrait"
+            tools:ignore="MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
